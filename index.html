@@ -1,9 +1,37 @@
-<!DOCTYPE html>
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>Aplicando conceitos git</title>
+    <title>CRUD JS</title>
+    <link rel="stylesheet" href="meu.css">
+    <script src="myscript.js"></script>
 </head>
 <body>
-    A forma de instalção do git na máquinas pode variar de acordo com o sistema operacional que está sendo usado (Windows, Linux ou Mac).
+    <div class="all">
+        <h1>HTML, CSS, JS, JSON</h1>
+    <div class="center">
+        <form id="frmcadastro">
+            <label for="txtnome">Nome</label>
+            <input type="text" id="texto" placeholder="Seu nome">
+<br><br>
+            <label for="data">Data de Nascimento</label>
+            <input type="date" name="data" id="data" value="1990-08-29" required>
+<br><br>
+            <fieldset>
+                <legend>Sexo</legend>
+                <input type="radio" name="genero" id="gen" value="male">
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="genero" id="gen" value="female">
+                <label for="feminino">Feminino</label>
+            </fieldset><br>
+            <button type="button" id="cads" onclick="mostrarTexto()">
+            </form>
+    </div></div>
+
+    <div class="tab">
+        <h3>Resultados<hr></h3>
+        <p id="mostrarT"></p>
+        <p id="mostrarD"></p> 
+        <p id="mostrarS"></p>  
+    </div>
 </body>
 </html>
